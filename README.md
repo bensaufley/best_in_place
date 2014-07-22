@@ -35,6 +35,15 @@ The editor works by PUTting the updated value to the server and GETting the upda
 
 ##Usage of Rails 3 Gem
 
+###Initialization
+To configure the default wrapper element for best_in_place, create a `best_in_place.rb` file in your initializers:
+
+```ruby
+BestInPlace.configure do |config|
+  config.container = :div #defaults to :span
+end
+```
+
 ###best_in_place
 **best_in_place object, field, OPTIONS**
 
